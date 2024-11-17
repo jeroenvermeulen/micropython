@@ -1,0 +1,5 @@
+/.venv
+/.idea
+/webrepl_cfg.py
+*~
+*.bak
