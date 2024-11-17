@@ -1,4 +1,4 @@
-# Boilerplate for MicroPython on ESP32
+# Boilerplate for MicroPython on ESP32 with WebREPL
 Will probably work on other boards like ESP8266, but I haven't tested it.
 
 # Configuration
