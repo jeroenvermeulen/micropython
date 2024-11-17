@@ -1,11 +1,3 @@
-# export PYBOARD_DEVICE=/dev/tty.usbserial-021R2JF2
-# esptool.py --chip esp32 --port "${PYBOARD_DEVICE}" write_flash -z --erase-all --compress 0x1000 ~/Downloads/ESP32_GENERIC-20241025-v1.24.0.bin
-
-# ./pyboard.py -f cp webrepl_cfg.py :
-# ./pyboard.py -f cp boot.py :
-
-# screen $PYBOARD_DEVICE 115200
-
 import network
 import time
 import webrepl
@@ -20,6 +12,7 @@ def do_connect(wifi_ssid, wifi_password):
     # Connect to WiFi access point
     print(f"Connecting to {wifi_ssid}", end="")
     station.connect(wifi_ssid, wifi_password)
+    # Wait for connection
     while 1:
         print(".", end="")
         try:

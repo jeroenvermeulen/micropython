@@ -33,5 +33,5 @@ screen  "${PYBOARD_DEVICE}"  115200
 Press the "Reset" button on the ESP32 to start the REPL.
 
 Notes:
-- Press `Ctrl-A` then `Ctrl-\` to exit `screen`
+- Press `Ctrl-A` then `K`, `Y` to exit `screen`
 - The `PYBOARD_DEVICE` environment variable is used by the `pyboard.py` script as serial port setting. 
